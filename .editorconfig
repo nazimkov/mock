@@ -1,0 +1,29 @@
+; EditorConfig to support per-solution formatting.
+; Use the EditorConfig VS add-in to make this work.
+; http://editorconfig.org/
+
+; This is the default for the codeline.
+root = true
+
+[*]
+end_of_line = CRLF
+
+[*.{cs,txt,md}]
+indent_style = tab
+indent_size = 4
+
+[*.{sln,proj,csproj,fsproj,vbproj,props,targets,xml,xdoc,config,nuspec}]
+indent_style = tab
+indent_size = 2
+
+[*.Designer.cs]
+indent_style = space
+indent_size = 4
+
+[*.resx]
+indent_style = space
+indent_size = 2
+
+[appveyor.yml]
+indent_style = space
+indent_size = 2
